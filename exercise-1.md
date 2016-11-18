@@ -1,4 +1,8 @@
-###### Small exercise: 15 minutes
+### Resource:
+
+For this exercise, you will be using the OMDB API, one of the most famous publicly accessible web APIs.  To get started, check out [the documentation](https://www.omdbapi.com/).
+
+### Small exercise: 
 Construct OMDB queries to find the answers:
 - What is the plot for Tarzan (1999)?
 - Who are the main actors in Tarzan (2016)?
