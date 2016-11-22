@@ -18,4 +18,6 @@
 - Next, build your AJAX method & a hard-coded query and log the response data.
 - Now, build two buttons, `poem` and `sentence`.
 - Depending on what the user clicks, make an API call to the appropriate endpoint, log the response data, parse it into variables and append them to the page using JS
+
+#### Bonus
 - Finally, build an input box for the poem `lines` query string.
