@@ -20,6 +20,8 @@ window.onload = function() {
 
     var linesInputEl = document.getElementById('poem-lines');
     var howManyLines = linesInputEl.value;
+    var linesToNumber = parseInt(howManyLines);
+    console.log(linesToNumber);
 
     var endpoint = 'http://ShakeItSpeare.com/api/poem';
     var url = endpoint + '?lines=' + howManyLines;
