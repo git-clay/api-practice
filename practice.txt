@@ -1,0 +1,14 @@
+http://www.omdbapi.com/?t=Tarzan&y=1999&plot=short&r=json
+omdb.get(title=‘Tarzan’, year=1999, fullplot=True)
+A man raised by gorillas must decide where he really belongs when he discovers he is a human.
+
+http://www.omdbapi.com/?t=Tarzan&y=2016&plot=short&r=json
+omdb.get(title=‘Tarzan’, year=2016, actors=True)
+Alexander Skarsgård, Rory J. Saper, Christian Stevens, Christoph Waltz
+
+http://www.omdbapi.com/?t=home+alone+2&y=1992&plot=short&r=json
+Chris Columbus
+
+http://www.omdbapi.com/?t=The+Emperor's+New+Groove&y=&plot=short&r=json
+David Spade
+
