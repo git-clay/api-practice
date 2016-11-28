@@ -15,9 +15,7 @@ var getFunc = function(){ ///used to dry out code
 			picUrl = nasaUrl;
 			}
 		imgGet = $.get(picUrl).done(function(data){
-			console.log(imgGet);
 			imgStore = jQuery.parseJSON(imgGet.responseText).url;
-				console.log(imgStore);
 			$('#display').append('<img src="'+ imgStore+'">');
 		});
 	};
@@ -38,8 +36,12 @@ $(document).ready(function(){
 		$('#display').html(''); 
 		picUrl= marsUrl+'sol='+(Math.floor(Math.random()*1500))+'&'+apiKey;
 		imgGet = $.get(picUrl).done(function(data){
-			imgStore = jQuery.parseJSON(imgGet.responseText).photos[(Math.floor(Math.random()*100))].img_src;
+			imgStore = jQuery.parseJSON(imgGet.responseText).photos[(Math.floor(Math.random()*20))].img_src;
 			$('#display').append('<img src="'+ imgStore+'">');
+		})
+		.fail(function(){
+			console.log('failed');
+			$('#marsBtn').click();
 		});
 		e.preventDefault();
 	});	
